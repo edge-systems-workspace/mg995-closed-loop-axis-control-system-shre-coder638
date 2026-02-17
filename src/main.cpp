@@ -9,10 +9,19 @@ void setup() {
     myServo.attach(11);
 
     Serial.println("Servo initiate");
-
 }
 
 
 void loop() {
-// write your code here
+
+    for (int i = 0; i <= 180; i += 10) {
+        myServo.write(i);
+
+        Serial.print("Servo Angle: ");
+        Serial.println(i);
+
+        delay(500);
+    }
+
+
 }
