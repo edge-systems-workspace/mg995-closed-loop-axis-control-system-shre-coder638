@@ -1,4 +1,8 @@
 #include <Arduino.h>
+#include <Servo.h>
+
+Servo myServo;
+
 void setup() {
 // write your initialization code here
 }
